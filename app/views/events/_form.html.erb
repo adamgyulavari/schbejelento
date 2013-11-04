@@ -1,0 +1,96 @@
+<div class="event">
+	<%= form_for @event, url: {action: @action}, method: 'post' do |f| %>
+		<div class="name">
+			<%= f.text_field :name, :autofocus => true, :placeholder => "A rendezvény neve" %>
+		</div>
+		<div class="left">
+			<div class="date_cont cont">
+				<p>A rendezvény időpontja</p>
+				<div class="date">
+					<%= f.label :date, "Dátum" %><br />	
+					<%= f.date_field :date %>
+				</div>
+				<div class="end timeright">
+					<%= f.label :end, "Vége" %><br />
+					<%= f.time_field :end, :placeholder => "00:00" %>
+				</div>
+				<div class="start timeright">
+					<%= f.label :start, "Kezdete" %><br />	
+					<%= f.time_field :start, :placeholder => "00:00" %>
+				</div>
+			</div>
+			<div class="member_cont cont">
+				<p>Külsős rendezők</p>
+				<div class="members_in">
+					<%= f.label :members_in, "bejönnek" %><br />
+					<%= f.time_field :members_in, :placeholder => "00:00" %>
+				</div>
+				<div class="members_out time">
+					<%= f.label :members_out, "kimennek" %><br />	
+					<%= f.time_field :members_out, :placeholder => "00:00" %>
+				</div>
+				<div class="members_ext">
+					<%= f.label :members_ext, "számuk" %><br />
+					<%= f.text_field :members_ext, :placeholder => "000" %>
+				</div>
+				<div class="members_ext_names">
+					<%= f.label :members_ext_names, "Neveik" %><br />	
+					<%= f.text_area :members_ext_names %>
+				</div>
+			</div>
+			<div class="actions_cont cont clear">
+				<%= f.button "Törlés", :type=>'reset' %>
+				<%= f.submit "Küldés" %>
+			</div>
+		</div>
+		<div class="right">
+			<div class="guest_cont cont">
+				<p>Vendégek</p>
+				<div class="guest time">
+					<%= f.label :guests, "összesen" %><br />
+					<%= f.text_field :guests, :placeholder => "000" %>
+				</div>
+				<div class="guest_ext time">
+					<%= f.label :guests_ext, "külsős" %><br />
+					<%= f.text_field :guests_ext, :placeholder => "000" %>
+				</div>
+			</div>
+			<div class="beeng_cont cont">
+				<p>Beengedés</p>
+				<div class="beeng_rendezo">
+					<%= f.check_box :beeng_rendezo %><%= f.label :beeng_rendezo, "Rendező segíti" %>
+				</div>
+				<div class="beeng_vendeglista">
+					<%= f.check_box :beeng_vendeglista %><%= f.label :beeng_vendeglista, "Vendéglista alapján történik" %>
+				</div>
+				<div class="beeng_biztior">
+					<%= f.check_box :beeng_biztior %><%= f.label :beeng_biztior, "Biztonsági őrös lezáratás" %>
+				</div>
+			</div>
+			<div class="levalasztas_cont cont">
+				<p>Leválasztás típusa</p>
+				<div class="levalasztas">
+					<%= f.select :levalasztas, %w["Teljes földszint", "egyebek"], :include_blank => "Válassz..." %>
+				</div>
+			</div>
+			<div class="h_cont cont">
+				<p>Igénybevett területek</p>
+				<div class="h_fnt">
+					<%= f.check_box :h_fnt %><%= f.label :h_fnt, "Földszinti Nagyterem" %>
+				</div>
+				<div class="h_ent">
+					<%= f.check_box :h_ent %><%= f.label :h_ent, "Első emeleti Nagyterem" %>
+				</div>
+				<div class="h_eek">
+					<%= f.check_box :h_eek %><%= f.label :h_eek, "Első emeleti Körfolyosó" %>
+				</div>
+				<div class="h_102">
+					<%= f.check_box :h_102 %><%= f.label :h_102, "102" %>
+				</div>
+				<div class="h_103">
+					<%= f.check_box :h_103 %><%= f.label :h_103, "103" %>
+				</div>
+			</div>
+		</div>
+	<% end %>
+</div>

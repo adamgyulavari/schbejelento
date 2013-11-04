@@ -1,0 +1,9 @@
+<div class="main-container">
+	<% if @events.count > 0 %>
+		<%= render :partial => 'events/header' %>
+		<%= render @events %>
+	<% else %>
+		<p>Jelenleg nincs megjelenítendő rendezvény.</p>
+	<img src="<%= asset_path('loading.gif') %>" />
+	<% end %>
+</div>

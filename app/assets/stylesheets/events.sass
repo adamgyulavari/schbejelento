@@ -1,0 +1,199 @@
+// Place all the styles related to the Events controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$font-bold: 'Segoe UI', 'Conv_segoeui'
+$font-narrow: 'Segoe UI Light', 'Conv_segoeuil'
+$deep: #1885b3
+$strong: #41c7ff
+$ligth: #e2f5ff
+$border: #dbdbdb
+
+.event
+	font-size: 13px
+
+	p
+		display: block
+		margin: 0 auto
+		width: 100%
+		text-align: center
+		font-size: 16px
+		margin-bottom: 10px
+
+	h1, h2
+		margin-top: 0px
+		margin-bottom: 0px	
+
+	.name
+		margin-top: 20px
+		margin-bottom: 10px
+		border-bottom: solid 1px $deep
+
+		input, h1
+			font-family: $font-bold
+			color: $deep
+			border: none
+			width: 100%
+			font-size: 32px
+
+	.left
+		float: left
+
+	.right
+		float: right
+	.date_cont
+		display: block
+		overflow: auto
+		padding: 20px
+		margin-bottom: 20px
+		width: 580px
+
+	.date
+		float: left
+		input, h2
+			font-size: 24px
+			color: $deep
+			font-family: $font-bold
+
+	.time
+		float: left
+		margin-left: 20px
+		input, h2
+			font-size: 24px
+			color: $deep
+			font-family: $font-bold
+			width: 70px
+	.timeright
+		float: right
+		margin-left: 20px
+		input, h2
+			font-size: 24px
+			color: $deep
+			font-family: $font-bold
+			width: 100px
+
+	.clear
+		clear: both
+
+	.cont
+		border: solid 1px $border
+
+	.actions_cont
+		padding: 20px
+		width: 580px
+		margin-top: 20px
+		input
+			width: 280px
+			color: #158954
+			background: #dafaeb
+			border: solid 1px #158954
+			font-family: $font-bold
+			font-size: 24px
+			margin-left: 10px
+		button
+			width: 280px
+			color: #bb0000
+			background: #ffeded
+			border: solid 1px #bb0000
+			font-family: $font-bold
+			font-size: 24px
+
+
+	.member_cont
+		padding: 20px
+		width: 580px
+		display: block
+		overflow: auto
+
+		.members_in
+			float: left
+			input, h2
+				font-size: 24px
+				color: $deep
+				font-family: $font-bold
+				width: 100px
+		.members_out
+			input, h2
+				width: 100px
+		.members_ext
+			float: right
+			input
+				font-size: 24px
+				color: $deep
+				font-family: $font-bold
+				width: 70px
+
+		.members_ext_names
+			float: right
+			textarea
+				width: 575px
+				height: 200px
+				font-size: 16px
+				color: $deep
+				font-family: $font-narrow
+	.guest_cont
+		display: inline-block
+		border: solid 1px $border
+		padding-bottom: 20px
+		padding-top: 20px
+		margin-bottom: 20px
+		width: 350px
+		
+		.guest
+			margin-left: 90px
+		.guest_ext
+			margin-right: 20px
+
+	.beeng_cont
+		display: block
+		overflow: auto
+		padding: 20px
+		width: 310px
+
+	.h_cont, .levalasztas_cont
+		margin-top: 20px
+		padding: 20px
+		width: 310px
+
+	.levalasztas
+		select
+			color: $deep
+			font-family: $font-narrow
+			font-size: 24px
+			width: 100%
+
+.main-container
+	.list_event
+		display: block
+		overflow: auto
+		clear: both
+		font-size: 20px
+		padding: 10px
+		a
+			color: #5e5e5e
+		div
+			float: left
+
+		.name
+			width: 400px
+		.date
+			width: 150px
+		.owner
+			width: 200px
+		.phone
+			width: 150px
+		.status
+
+	.row
+		cursor: pointer
+	.row:hover
+		background: #f0fdf7
+	.header
+		margin-top: 20px
+		color: $deep
+		font-family: $font-narrow
+		border-bottom: solid 1px $deep
+	.odd
+		background: #f0faff
+	.even
+		background: white

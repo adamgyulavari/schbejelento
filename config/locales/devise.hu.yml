@@ -1,0 +1,70 @@
+# Additional translations at https://github.com/plataformatec/devise/wiki/I18n
+
+hu:
+  devise:
+    common:
+      sign_in: "bejelentkezés"
+      user: "felhasználó"
+      password: "jelszó"
+    views:
+      sessions:
+        remember_me: "Emlékezz rám"
+      shared:
+        forgot_your_password: "Elfelejtettem a jelszavam!"
+        didnt_receive_confirmation: "Nem kaptam a fiókom megerősítéséről levelet!"
+    confirmations:
+      confirmed: "A fiókod megerősítve."
+      confirmed_and_signed_in: "A fiókod megerősítve, és sikeresen bejelentkeztél."
+      send_instructions: "Hamarosan kapsz egy e-mailt a fiókod megerősítéséről!"
+      send_paranoid_instructions: "Ha az e-mail címed már szerepel az adatbázisban, hamarosan kapsz egy e-mailt annak megerősítéséről."
+    failure:
+      already_authenticated: "Már be vagy jelentkezve."
+      inactive: "Nincs aktiválva a fiókod."
+      invalid: "Rossz e-mail cím vagy jelszó."
+      invalid_token: "Érvénytelen bejelentkezés."
+      locked: "Fiókod zárolva van."
+      not_found_in_database: "Nincs ilyen felhasználó."
+      timeout: "Inaktivitás miatt kijelentkeztettünk, lépj be újra!"
+      unauthenticated: "Ehhez be kell jelentkezned!"
+      unconfirmed: "Ehhez meg kell erősítened a fiókod!"
+    mailer:
+      confirmation_instructions:
+        subject: "Megerősítési információk"
+      reset_password_instructions:
+        subject: "Új jelszó információk"
+      unlock_instructions:
+        subject: "Aktiválási információk"
+    omniauth_callbacks:
+      failure: "Could not authenticate you from %{kind} because \"%{reason}\"."
+      success: "Successfully authenticated from %{kind} account."
+    passwords:
+      no_token: "Ezt az oldalt, csak új jelszó igénylése után tudod megnézni. Ha kaptál már róla levelet, biztosan a teljes URL-t másoltad be?"
+      send_instructions: "Hamarosan küldünk egy levelet az új jelszavaddal kapcsolatos információkról."
+      send_paranoid_instructions: "Ha az e-mail címed szerepel az adatbázisban, hamarosan küldünk egy levelet az új jelszavaddal kapcsolatos információkról."
+      updated: "Jelszavad megváltozott és sikeresen bejelentkeztél."
+      updated_not_active: "Jelszavad megváltozott."
+    registrations:
+      destroyed: "Viszlát, felhasználódat deaktiváltuk."
+      signed_up: "Üdv a fedélzeten!"
+      signed_up_but_inactive: "You have signed up successfully. However, we could not sign you in because your account is not yet activated."
+      signed_up_but_locked: "You have signed up successfully. However, we could not sign you in because your account is locked."
+      signed_up_but_unconfirmed: "Elküldtünk egy levelet, amely tartalmazza a fiókod megerősítésével kapcsolatos információkat."
+      update_needs_confirmation: "Változtatásaidat mentettük, hamarosan küldünk egy levelet az e-mail címed megerősítésével kapcsolatos információkról."
+      updated: "Változtatásaidat mentettük."
+    sessions:
+      signed_in: "Bejelentkeztél! Üdv újra itt!"
+      signed_out: "Kijelentkeztél!"
+    unlocks:
+      send_instructions: "You will receive an email with instructions about how to unlock your account in a few minutes."
+      send_paranoid_instructions: "If your account exists, you will receive an email with instructions about how to unlock it in a few minutes."
+      unlocked: "Your account has been unlocked successfully. Please sign in to continue."
+  errors:
+    messages:
+      already_confirmed: "már megerősítve, kérlek jelentkezz be!"
+      confirmation_period_expired: "megerősítésének lehetősége lejárt %{period}, kérlek kérj egy új megerősítő levelet!"
+      expired: "megerősítésének lehetősége lejárt, kérlek kérj egy új megerősítő levelet!"
+      not_found: "nem található"
+      not_locked: "nincs zárolva"
+      not_saved:
+        one: "egy hiba megakadályozta %{resource} mentését:"
+        other: "%{count} hiba megakadályozta %{resource} mentését:"

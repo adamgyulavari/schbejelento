@@ -1,0 +1,9 @@
+<div class="list_event row <%= cycle('odd', 'even') -%>" id="event_<%= event.id %>">
+<%= link_to (event.user == current_user && event.status == 0) ? edit_event_path(event) : event do %>
+	<div class="name"><%= event.name %></div>
+	<div class="date"><%= event.date.strftime("%Y. %m. %d.") %></div>
+	<div class="owner"><%= event.user.name %></div>
+	<div class="phone"><%= event.user.phone_number %></div>
+	<div class="status"><%= event.status %></div>
+<% end %>
+</div>

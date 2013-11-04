@@ -1,0 +1,148 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+ body {
+ 	font-family: 'Segoe UI', 'Conv_segoeui';
+ 	color: #5e5e5e;
+ 	margin: 0;
+ 	padding: 0;
+ }
+
+ .header {
+ 	padding-top: 10px;
+ 	padding-bottom: 5px;
+ }
+
+ .header-container {
+ 	background: #5e5e5e;
+ 	margin: 0;
+ 	padding: 0;
+ 	display: block;
+ 	overflow: auto;
+ 	width: 100%;
+ }
+
+ .header img {
+ 	float: left;
+ }
+
+ .header p {
+ 	float: left;
+ 	color: #41c7ff;
+ 	font-size: 36px;
+ 	margin-bottom: 0px;
+ 	margin-top: 62px;
+ 	font-family: 'Segoe UI', 'Conv_segoeui';
+ }
+
+ .container {
+	display: block;
+ 	overflow: auto;
+ 	width: 1000px;
+ 	margin: 0 auto;
+ }
+
+ .menu-container {
+ 	background: #eaeaea;
+ }
+
+ .menu {
+ 	color: #1885b3;
+ 	font-size: 24px;
+ 	font-family: 'Segoe UI Light', 'Conv_segoeuil';
+ 	padding-top: 10px;
+ 	padding-bottom: 10px;
+ }
+
+ .menu a {
+ 	color: #1885b3;
+ 	text-transform: uppercase;
+ }
+
+ .menu a.left {
+ 	margin-right: 20px;
+ }
+
+ .menu a.right {
+ 	float: right;
+ 	margin-left: 20px;
+ }
+
+ .menu a:hover {
+ 	color: #41c7ff;
+ }
+
+ .menu label {
+ 	vertical-align: bottom;
+ 	display: inline-block;
+ }
+
+ .menu input {
+ 	border: none;
+ 	font-size: 24px;
+ 	font-family: 'Segoe UI Light', 'Conv_segoeuil';
+ 	padding: 0 0 0 5px;
+ 	margin: 0 0 0 5px;
+ 	color: #1885b3;
+ }
+
+ .sign-in h2 {
+ 	font-size: 42px;
+ 	font-weight: normal;
+ }
+
+ .sign-in label {
+ 	font-size: 24px;
+ 	font-family: 'Segoe UI Light', 'Conv_segoeuil';
+ }
+
+ .sign-in input {
+ 	border: solid 1px #5e5e5e;
+ 	font-size: 24px;
+ 	font-family: 'Segoe UI Light', 'Conv_segoeuil';
+ 	padding: 10px;
+ }
+
+ .sign-in #user_email {
+ 	margin-left: 6px;
+ }
+
+ .sign-in .beside-me {
+ 	float: left;
+ 	margin-right: 68px;
+ 	margin-top: 10px;
+ }
+
+ a {
+ 	text-decoration: none;
+ 	color: #41c7ff;
+ }
+
+ .alert {
+ 	padding: 10px;
+ 	border: solid 1px #bb0000;
+ 	background: #ffeded;
+ 	color: #bb0000;
+ 	font-family: 'Segoe UI Light', 'Conv_segoeuil';
+ 	font-size: 24px;
+ }
+
+  .notice {
+ 	padding: 10px;
+ 	border: solid 1px #0088ce;
+ 	background: #e2f5ff;
+ 	color: #0088ce;
+ 	font-family: 'Segoe UI Light', 'Conv_segoeuil';
+ 	font-size: 24px;
+ }

@@ -1,0 +1,94 @@
+<div class="event">
+		<div class="name">
+			<h1><%= @event.name %></h1>
+		</div>
+		<div class="left">
+			<div class="date_cont cont">
+				<p>A rendezvény időpontja</p>
+				<div class="date">
+					<label>Dátum</label><br />	
+					<h2><%= @event.date.strftime("%Y. %m. %d.") %></h2>
+				</div>
+				<div class="end timeright">
+					<label>Vége</label><br />
+					<h2><%= @event.end.strftime("%H:%M") %></h2>
+				</div>
+				<div class="start timeright">
+					<label>Kezdete</label><br />	
+					<h2><%= @event.start.strftime("%H:%M") %></h2>
+				</div>
+			</div>
+			<div class="member_cont cont">
+				<p>Külsős rendezők</p>
+				<div class="members_in">
+					<label>bejönnek</label><br />
+					<h2><%= @event.members_in %></h2>
+				</div>
+				<div class="members_out time">
+					<label>kimennek</label><br />	
+					<h2><%= @event.members_out %></h2>
+				</div>
+				<div class="members_ext time">
+					<label>számuk</label><br />
+					<h2><%= @event.members_ext %></h2>
+				</div>
+				<div class="members_ext_names">
+					<label>neveik</label><br />	
+					<h2><%= @event.members_ext_names %></h2>
+				</div>
+			</div>
+			<div class="actions_cont cont clear">
+			</div>
+		</div>
+		<div class="right">
+			<div class="guest_cont cont">
+				<p>Vendégek</p>
+				<div class="guest time">
+					<label>összesen</label><br />
+					<h2><%= @event.guests %></h2>
+				</div>
+				<div class="guest_ext time">
+					<label>külsős</label><br />
+					<h2><%= @event.guests_ext %></h2>
+				</div>
+			</div>
+			<div class="beeng_cont cont">
+				<p>Beengedés</p>
+				<div class="beeng_rendezo">
+					<% if @event.beeng_rendezo %><label>Rendező segíti</label><% end %>
+				</div>
+				<div class="beeng_vendeglista">
+					<% if @event.beeng_vendeglista %><label>Vendéglista alapján történik</label><% end %>
+				</div>
+				<div class="beeng_biztior">
+					<% if @event.beeng_biztior %><label>Biztonsági őrös lezáratás</label><% end %>
+				</div>
+			</div>
+			<% if @event.beeng_biztior %>
+			<div class="levalasztas_cont cont">
+				<p>Leválasztás típusa</p>
+				<div class="levalasztas">
+					<%= @event.levalasztas %>
+				</div>
+			</div>
+			<% end %>
+			<div class="h_cont cont">
+				<p>Igénybevett területek</p>
+				<div class="h_fnt">
+					<% if @event.h_fnt %><label>Földszinti Nagyterem</label><% end %>
+				</div>
+				<div class="h_ent">
+					<% if @event.h_ent %><label>Első emeleti Nagyterem</label><% end %>
+				</div>
+				<div class="h_eek">
+					<% if @event.h_eek %><label>Első emeleti Körfolyosó</label><% end %>
+				</div>
+				<div class="h_102">
+					<% if @event.h_102 %><label>102</label><% end %>
+				</div>
+				<div class="h_103">
+					<% if @event.h_103 %><label>103</label><% end %>
+				</div>
+			</div>
+		</div>
+</div>

@@ -1,0 +1,10 @@
+<div class="menu-container">
+	<div class="menu container">
+		<%= link_to "Rendezvények", root_path, :class => 'left' %>
+		<%= link_to "Új rendezvény", new_event_path, :class => 'left' %>
+		<label for='search'><img src="<%= asset_path('sbicon.png') %>"></label><input type="text" name="search" placeholder="Keresés...">
+
+		<%= link_to "Kilépés", destroy_session_path(current_user), :method => 'delete', :class => 'right' %>
+		<%= link_to "Fiókom", edit_user_path(current_user), :class => 'right' %>
+	</div>
+</div>
